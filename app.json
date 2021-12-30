@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "zach-sleep-app",
+    "slug": "zach-sleep-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "zach-sleep-app"
+}
