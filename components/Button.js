@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Pressable } from 'react-native';
 
 export default function Buttons() {
 	const setRandomColor = () => {
@@ -14,14 +14,18 @@ export default function Buttons() {
 
 	return (
 		<View>
-			<Button
+			<Text
+				style={{
+					fontSize: 80,
+					color: backgroundColor
+				}}
 				onPress={() => {
 					setBackgroundColor(setRandomColor);
 				}}
-				title="Sleep"
-				color={backgroundColor}
-				accessibilityLabel="Learn more about this purple button"
-			/>
+				accessibilityLabel="Learn more about this button"
+			>
+				Sleep
+			</Text>
 		</View>
 	);
 }
